@@ -8,13 +8,20 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: PreferredSize(
+    return Scaffold(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(70),
         child: Navbar(),
       ),
       body: Center(
-        child: Text('Hello World'),
+        child: Column(
+          children: [
+            Container(),
+            Container(),
+            Container(),
+            Container(),
+          ],
+        ),
       ),
     );
   }

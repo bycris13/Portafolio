@@ -35,7 +35,7 @@ class Navbar extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               _NavButton(
-                label: 'Contect',
+                label: 'Contact',
                 isSelected: false,
                 onPressed: () {},
               ),
@@ -66,7 +66,7 @@ class _NavButton extends StatelessWidget {
         height: 35,
         width: isSelected ? 101 : 90,
         decoration: BoxDecoration(
-            color: isSelected ? Colors.amber : Colors.blue,
+            color: isSelected ? Colors.grey[900] : Colors.red,
             borderRadius: BorderRadius.circular(20)),
         child: SizedBox(
           width: 90,
