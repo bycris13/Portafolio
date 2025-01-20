@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Mi Portafolio
+=======
+# Mi portafolio
+>>>>>>> e892ca53e31c98c2cfc80d89f6d43c63aab39860
 
 A new Flutter project.
 
