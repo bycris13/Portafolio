@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_cris/widgets/navbar.dart';
+// ignore: depend_on_referenced_packages
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 void main() => runApp(const HomeScreen());
 
@@ -13,8 +15,7 @@ class HomeScreen extends StatelessWidget {
         preferredSize: Size.fromHeight(70),
         child: Navbar(),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
         children: [
           const SizedBox(height: 70),
           const _TextPresentation(
@@ -24,25 +25,45 @@ class HomeScreen extends StatelessWidget {
           const _TextPresentation(
               padding: EdgeInsets.only(left: 40),
               text: "Cristian Arias",
-              style: TextStyle(color: Colors.grey, fontSize: 28)),
-          const _TextPresentation(
-              padding: EdgeInsets.only(left: 40),
-              text: "A flutter Developer",
-              style: TextStyle(fontSize: 28, color: Colors.grey)),
-          const SizedBox(height: 30),
+              style: TextStyle(
+                  color: Color.fromARGB(255, 199, 197, 197), fontSize: 28)),
           Padding(
             padding: const EdgeInsets.only(left: 40),
+            // ignore: deprecated_member_use
+            child: TypewriterAnimatedTextKit(
+              text: const ['A software developer', 'A flutter developer'],
+              speed: const Duration(milliseconds: 100),
+              textStyle: const TextStyle(
+                  color: Color.fromARGB(255, 199, 197, 197), fontSize: 28),
+            ),
+          ),
+          const SizedBox(height: 30),
+          Padding(
+            padding: const EdgeInsets.only(left: 30, right: 350),
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF47C5FB),
                   foregroundColor: Colors.white,
-                  minimumSize: const Size(110, 48)),
-              child: const Text('About', style: TextStyle(fontSize: 16)),
+                  minimumSize: const Size(101, 48)),
+              child: const Text('About'),
             ),
           ),
-          Container(),
-          Container(),
+          const SizedBox(height: 170),
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: const Color.fromARGB(255, 30, 30, 33),
+          ),
+          Container(
+            height: 500,
+            width: double.maxFinite,
+          ),
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: const Color.fromARGB(255, 30, 30, 33),
+          ),
         ],
       ),
     );
