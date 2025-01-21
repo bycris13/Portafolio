@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Mi Portafolio
 =======
 # Mi portafolio
@@ -18,3 +19,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Portafolio
+>>>>>>> 90e845ef8fc8f6240e1c9531f8fad4c8a379ba17
