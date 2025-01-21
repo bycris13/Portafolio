@@ -66,7 +66,7 @@ class _NavButton extends StatelessWidget {
         height: 35,
         width: isSelected ? 101 : 90,
         decoration: BoxDecoration(
-            color: isSelected ? Colors.grey[900] : Colors.red,
+            color: isSelected ? Colors.grey[900] : const Color(0x00151515),
             borderRadius: BorderRadius.circular(20)),
         child: SizedBox(
           width: 90,
