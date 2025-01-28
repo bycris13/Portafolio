@@ -38,16 +38,21 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-          Padding(
-            padding: const EdgeInsets.only(left: 30, right: 350),
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF47C5FB),
-                  foregroundColor: Colors.white,
-                  minimumSize: const Size(101, 48)),
-              child: const Text('About'),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 35),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFF47C5FB),
+                      foregroundColor: Colors.white,
+                      minimumSize: const Size(10, 45)),
+                  child: const Text('About'),
+                ),
+              ),
+            ],
           ),
           const SizedBox(height: 170),
           Container(
